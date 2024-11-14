@@ -1,0 +1,19 @@
+:root {
+    --main-font: Poppins, sans-serif;
+    --tittle-font: QuickSand, sans-serif;
+    --special-font: EB Garamond, serif;
+
+    --transition: all 0.3s;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
