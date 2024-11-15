@@ -16,56 +16,55 @@
 
   <body>
     <main class="app">
-    <section class="greating">
-      <h1>Todo List</h1>
-      <p>What's your plan for today, <input type="text" id="name" placeholder="your name here">?</p>
-    </section>
+        <section class="greating">
+            <h1>Todo List</h1>
+            <p>What's your plan for today, <input type="text" id="name" placeholder="your name here">?</p>
+        </section>
 
-    <section class="todo">
-      <h3>Create your list</h3>
+        <section class="create-todo">
+            <h3>Create your list</h3>
 
-      <form id="todo-form">
-        <input type="text" name="content" id="content" placeholder="Take dog for a walk" />
-        <button type="submit">+</button>
+            <form id="todo-form">
+                <input type="text" name="content" id="content" placeholder="Take dog for a walk" />
 
-        <h3>Pick a category:</h3>
-        <div class="options">
-            <label>
-                <input type="radio" name="category" id="category-1" value="business"/>
-                <span class="bubble business"></span>
-                <div>Business</div>
-            </label>
+                <h3>Pick a category:</h3>
+                <div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="business" /> 
+						<span class="bubble business"></span>
+						<div>Business</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="personal" />
+						<span class="bubble personal"></span>
+						<div>Personal</div>
+					</label>
+				</div>
 
-            <label>
-                <input type="radio" name="category" id="category-2" value="personal"/>
-                <span class="bubble personal"></span>
-                <div>Personal</div>
-            </label>
-        </div>
+                <input type="submit" value="Add todo" />
+            </form>
+        </section>
 
-        <input type="submit" value="Add todo" />
-    </form>
+        <section class="todo-list">
+            <h3>TODO LIST:</h3>
 
-    <section class="todo-list">
-        <h3>TODO LIST:</h3>
+            <div class="list todo-list">
+                <div class="todo item">
+                    <label>
+                        <input type="checkbox" name="todo" id="todo-1" />
+                        <span class="bubble business"></span>
+                    </label>
 
-        <div class="list todo-list">
-            <div class="todo item">
-                <label>
-                    <input type="checkbox" name="todo" id="todo-1" />
-                    <span class="bubble business"></span>
-                </label>
+                    <div class="todo-content">
+                        <input type="text" value="Take dog for a walk" readonly />
+                </div>
 
-                <div class="todo-content">
-                    <input type="text" value="Take dog for a walk" readonly />
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
             </div>
-
-            <div class="actions">
-                <button class="edit">Edit</button>
-                <button class="delete">Delete</button>
-            </div>
-        </div>
-    </section>
+        </section>
     </main>
 
     <script src="./assets/js/app.js"></script>
